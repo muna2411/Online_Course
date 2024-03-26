@@ -1,7 +1,7 @@
 
 const Count = () => {
     return (
-        <div className=" my-[150px] flex justify-center items-center">
+        <div className=" mt-[100px] flex justify-center items-center mb-[200px]">
            <div className="bg-white w-[1300px] h-[280px] rounded-full" >
               <img className="flex justify-center items-center w-[100px] mx-auto my-[12px]" src="https://i.ibb.co/F50wM2h/Compass-5-removebg-preview.png"></img>
               <p className="text-center text-[30px] text-[#5DBB63] font-d">OUR GLOBAL COMMUNITY</p>

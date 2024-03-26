@@ -4,7 +4,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 const Navbar = () => {
     return (
         <div>
-        <nav className="bg-white absolute top-0 left-0 right-0 px-4  font-a flex justify-between items-center h-[130px]">
+        <nav className="bg-white absolute top-0 left-0 right-0 px-4  font-a flex justify-between items-center h-[100px]">
         
         <div className="flex justify-center items-center">
           <img className="w-[180px] " src="https://i.ibb.co/47YSWb3/Compass-3-removebg-preview.png"></img>
