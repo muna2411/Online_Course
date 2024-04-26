@@ -6,6 +6,7 @@ import Coursecard from "./Home/Coursecard";
 import Teacher from "./Home/Teacher";
 
 
+
 const Main = () => {
     return (
         <div>
@@ -16,6 +17,7 @@ const Main = () => {
             <Count></Count>
             <Coursecard></Coursecard>
             <Teacher></Teacher>
+       
         </div>
     );
 };
