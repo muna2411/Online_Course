@@ -20,7 +20,7 @@ const Banner = () => {
                                 ]}
                                 speed={50}
                                 style={{ fontSize: '25px' }}
-                                className="font-b "
+                                className="font-b"
                                 repeat={Infinity}
                             />
                             <p className="text-start font-a text-[70px]  text-white">COURSE COMPASS</p>
