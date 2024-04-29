@@ -11,7 +11,7 @@ const Banner = () => {
       
                 <div className="flex justify-around items-center ">
 
-                    <div >
+                    <div className='mt-[50px]'>
                         <div className=" text-white lg:text-[25px] md:text-[20px] sm:text-[15px]  my-[200px]  text-start">
                             <TypeAnimation
                                 sequence={[
@@ -31,6 +31,7 @@ const Banner = () => {
 
                     <div>
                         {/* <img className="w-[550px]" src="https://i.ibb.co/5nmdDTH/15-removebg-preview.png"></img> */}
+                        {/* https://i.ibb.co/YkMj8f3/hh-removebg-preview.png */}
                         <div className="earth-container">
                           <img src="https://i.ibb.co/YkMj8f3/hh-removebg-preview.png" alt="Rotating Earth" className="earth"></img>
                         </div>

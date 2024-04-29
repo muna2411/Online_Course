@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ErrorPage = () => {
     return (
         <div>
-                <div className="min-h-screen flex  justify-around items-center bg-[#e8cbb7] px-[200px]">
+          <div className="min-h-screen flex  justify-around items-center bg-[#e8cbb7] px-[200px]">
            
            <img src="https://i.ibb.co/GctZLRw/b.gif" alt="wire-removebg-preview" width={350} height={350}></img>
            <div>

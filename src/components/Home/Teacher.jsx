@@ -15,6 +15,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 const Teacher = () => {
     return (
         <div className='my-[200px] w-[1000px] mx-auto'>
+         
              <Swiper
         slidesPerView={3}
         spaceBetween={30}

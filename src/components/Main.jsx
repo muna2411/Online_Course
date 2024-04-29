@@ -4,6 +4,7 @@ import Navbar from "./Home/Navbar";
 import Banner from "./Home/Banner";
 import Coursecard from "./Home/Coursecard";
 import Teacher from "./Home/Teacher";
+import About from "./Home/About";
 
 
 
@@ -17,7 +18,7 @@ const Main = () => {
             <Count></Count>
             <Coursecard></Coursecard>
             <Teacher></Teacher>
-       
+            <About></About>
         </div>
     );
 };
