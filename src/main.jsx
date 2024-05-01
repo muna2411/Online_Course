@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Main from './components/Main';
 import ErrorPage from './components/ErrorPage';
+import Contact from './components/Contact/Contact';
+import Home from './components/Home';
 
 const router = createBrowserRouter([
   {
@@ -15,15 +17,15 @@ const router = createBrowserRouter([
       element: <Main></Main>,
       errorElement: <ErrorPage></ErrorPage>,
       children:[
-        // {
-        //   path:"/",
-        //   element:<Home></Home>,
-        //   loader: () => fetch('https://library-management-server-nu.vercel.app/service')
-        // },
-        // {
-        //   path:"/addbook",
-        //   element:<AddBook></AddBook>
-        // },
+        {
+          path:"/",
+          element:<Home></Home>
+          // loader: () => fetch('https://library-management-server-nu.vercel.app/service')
+        },
+        {
+          path:"/contact",
+          element:<Contact></Contact>
+        },
       ]
   },
 ]);

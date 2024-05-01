@@ -25,9 +25,9 @@ const Navbar = () => {
           <img className="w-[180px] " src="https://i.ibb.co/47YSWb3/Compass-3-removebg-preview.png"></img>
         </div>
         <ul className="flex space-x-8 text-[18px] text-[#013220]">
-          <li>Home</li>
+          <Link to="/">Home</Link>
           <li>About</li>
-          <li>Contact</li>
+          <Link to="/contact">Contact</Link>
           <li>Contact</li>
           <Link to="/cart"><FaShoppingCart size={24} /></Link>
         </ul>
