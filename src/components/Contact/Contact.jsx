@@ -100,13 +100,13 @@ const Contact = () => {
                     </div>
                     <div className="text-center">
                       <FaWhatsapp  className="text-[35px] text-[#013220] mx-auto"></FaWhatsapp>
-                      <p className="text-[20px] text-[#013220] font-d">Phone Number</p>
-                      <p className="text-[18px] text-[#013220] font-c">+088 16495736289</p>
+                      <p className="text-[20px] text-[#013220] font-d">Whatsapp Number</p>
+                      <p className="text-[18px] text-[#013220] font-c">+088 19495786200</p>
                     </div>
                     <div className="text-center">
                       <FaMapMarkerAlt className="text-[35px] text-[#013220] mx-auto"></FaMapMarkerAlt>
-                      <p className="text-[20px] text-[#013220] font-d">Phone Number</p>
-                      <p className="text-[18px] text-[#013220] font-c">+088 16495736289</p>
+                      <p className="text-[20px] text-[#013220] font-d">Office Location</p>
+                      <p className="text-[18px] text-[#013220] font-c">West Bakolia, Chittagong</p>
                     </div>
                     
                   </div>
