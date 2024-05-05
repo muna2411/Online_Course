@@ -1,3 +1,4 @@
+/* earth animation banner */
 @keyframes rotateEarth {
   from {
       transform: rotate(0deg);
@@ -11,7 +12,6 @@
   width: 600px; 
   height: 600px;
   position: relative;
- 
 }
 
 .earth {
@@ -21,6 +21,22 @@
   top: 0;
   left: 0;
   animation: rotateEarth 30s linear infinite; 
-
 }
 
+
+/* card animation */
+.zoom {
+  transition: transform .5s; 
+}
+
+.zoom:hover {
+  transform: scale(1.10); 
+}
+
+
+/* active route */
+nav a.active{
+  text-decoration: underline;
+  color:rgb(86, 40, 129);
+  
+}

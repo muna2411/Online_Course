@@ -56,19 +56,20 @@ const Contact = () => {
     }, []);
 
   // https://i.ibb.co/Yh1VV9z/pexels-weekendplayer-701337.jpg
+  // https://i.ibb.co/RSZMt1y/1920px-Palace-of-Westminster-from-the-dome-on-Methodist-Central-Hall-cropped.jpg
 
     return (
-        <div >
+        <div>
             <div className="relative">
-                <img className="w-full h-[450px] opacity-80" src="https://i.ibb.co/RSZMt1y/1920px-Palace-of-Westminster-from-the-dome-on-Methodist-Central-Hall-cropped.jpg"></img>
-                {/* <p className="absolute inset-0 text-center font-a uppercase text-[80px] text-black mt-[150px] ">Contact Us</p> */}
+                <img className="w-full h-[500px] opacity-80" src="https://i.ibb.co/VB0bhWh/pexels-negativespace-33999.jpg"></img>
+                <p className="absolute inset-0 text-center font-a uppercase text-[80px] text-black mt-[150px] ">Contact Us</p>
                 
                <div className="flex justify-around items-start mt-[80px]">
-                <div>
+                <div className=" h-[800px] bg-slate-200">
                     <div className="p-[30px]">
                     <p className="text-[35px] font-b text-[#013220] text-center ">Contact us</p>
                     <div className="divider bg-white h-[1px]"></div>
-                    <p className="text-[30px] font-d text-black">Get In Touch</p>
+                    <p className="text-[30px] font-d text-black mt-[50px]">Get In Touch</p>
                     
                     <div>
                       <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 mt-[20px]">
@@ -78,7 +79,7 @@ const Contact = () => {
                       <input className="lg:w-[500px] md:w-[400px] sm:w-[300px] h-[50px] my-[10px] p-4 bg-white" style={{border: '1px solid black'}} type="email" name="user_email" placeholder="Type Email" required/>
                       <label className="text-[20px] font-d text-[#013220]">Message</label>
                       <textarea className="lg:w-[500px] md:w-[400px] sm:w-[300px] h-[120px] my-[10px] p-4 bg-white" style={{border: '1px solid black'}} name="message" placeholder="Write Your Message" required/>
-                      <input className='w-[500px] h-[50px] text-[20px] bg-[#013220] text-white font-d  mt-[20px] rounded-full' type="submit" value="Send" />
+                      <input className='w-[500px] h-[50px] text-[20px] bg-[#013220] text-white font-d  mt-[50px] rounded-full' type="submit" value="Send" />
                       </form>
                     </div>
                     </div>
@@ -111,17 +112,17 @@ const Contact = () => {
                     
                   </div>
                   <div className="my-[80px]">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14760.206744337313!2d91.8445534515068!3d22.351677170013765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad276c6e2b0f99%3A0x56129b01088360bd!2s17%20No.%20West%20Bakalia%20Ward%2C%20Chattogram!5e0!3m2!1sen!2sbd!4v1714663656675!5m2!1sen!2sbd" width="600" height="450"  allowFullScreen loading="lazy" ></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14760.206744337313!2d91.8445534515068!3d22.351677170013765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad276c6e2b0f99%3A0x56129b01088360bd!2s17%20No.%20West%20Bakalia%20Ward%2C%20Chattogram!5e0!3m2!1sen!2sbd!4v1714663656675!5m2!1sen!2sbd" width="600" height="450"  allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
             </div>
             {/* Video */}
-            <div className="relative">
+            <div className="relative mt-[100px]">
       <video
           style={{ Width: "600px",  height:"600px", margin: "0 auto" }}
           playsInline
           loop
-          // muted
+          muted
           // controls
           alt="All the devices"
           
@@ -131,7 +132,7 @@ const Contact = () => {
       />
       <div className="absolute inset-0">
       {/* <p className="text-start text-[50px] text-black font-extrabold mt-[50px] ml-[20px]">We Are Always Ready To <br/>Help & Guide You</p> */}
-     <div className="w-[700px] ml-[20px] mt-[50px]">
+     <div className="w-[700px] ml-[300px] mt-[200px]">
       <TypeAnimation
                                 sequence={[
                                     'We Are Always Ready To Help & Guide You .',
@@ -139,16 +140,16 @@ const Contact = () => {
                                    
                                 ]}
                                 speed={50}
-                                style={{ fontSize: '50px' }}
-                                className="text-start text-[50px] text-black font-extrabold"
+                                style={{ fontSize:'50px' }}
+                                className="text-[50px] text-black font-extrabold"
                                 repeat={Infinity}
                             />
       </div>
       <div className="flex justify-between items-center w-[600px]">
-      <img className='w-[200px] mt-[100px]' src="https://i.ibb.co/JpwYCf6/Animation-1711705548311.gif" alt="Animation"></img>
+      {/* <img className='w-[200px] mt-[100px]' src="https://i.ibb.co/JpwYCf6/Animation-1711705548311.gif" alt="Animation"></img> */}
       <div>
-      <p className="text-start ml-[100px] text-[60px] mt-[100px]  text-[#013220] font-a">Enroll Now</p>
-      <button className="bg-white text-[#013220] text-[20px] py-2 px-4 ml-[100px] font-a mt-[20px]" style={{ border: '1px solid black' }}>Get Started</button>
+      <p className=" ml-[300px] text-[60px] mt-[10px]  text-[#013220] font-a">Enroll Now</p>
+      <button className="bg-white text-[#013220] text-[20px] py-2 px-4 ml-[300px] font-a mt-[20px]" style={{ border: '1px solid black' }}>Get Started</button>
       </div>
       </div>
       

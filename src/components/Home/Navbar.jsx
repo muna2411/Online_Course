@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { FaSearch, FaShoppingCart } from 'react-icons/fa'; 
+import './Yes.css';
 
 const Navbar = () => {
     return (
@@ -24,13 +25,21 @@ const Navbar = () => {
         <div className="flex justify-center items-center">
           <img className="w-[180px] " src="https://i.ibb.co/47YSWb3/Compass-3-removebg-preview.png"></img>
         </div>
-        <ul className="flex space-x-8 text-[18px] text-[#013220]">
-          <Link to="/">Home</Link>
-          <li>About</li>
-          <Link to="/contact">Contact</Link>
-          <li>Contact</li>
-          <Link to="/cart"><FaShoppingCart size={24} /></Link>
-        </ul>
+        
+          {/* <a href="/" exact activeClassName="active-link">Home</a>
+          <a activeClassName="active-link">About</a>
+          <a to="/contact" activeClassName="active-link">Contact</a>
+          <a activeClassName="active-link">Card</a>
+          <a to="/cart" activeClassName="active-link"><FaShoppingCart size={24} /></a>  */}
+          <nav className="flex space-x-8 text-[18px] text-[#013220]">
+          <Link to="/" exact activeClassName="active-link">Home</Link>
+          <Link activeClassName="active-link">About</Link>
+          <Link to="/contact" activeClassName="active-link">Contact</Link>
+          <Link activeClassName="active-link">Card</Link>
+          <Link to="/cart" activeClassName="active-link"><FaShoppingCart size={24} /></Link> 
+          </nav>
+          
+        
 
        </div>
         </div>
