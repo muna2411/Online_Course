@@ -10,6 +10,8 @@ import Main from './components/Main';
 import ErrorPage from './components/ErrorPage';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home';
+import Card from './components/CourseCard/Card';
+import CardFrom from './components/CourseCard/CardFrom';
 
 const router = createBrowserRouter([
   {
@@ -23,8 +25,16 @@ const router = createBrowserRouter([
           // loader: () => fetch('https://library-management-server-nu.vercel.app/service')
         },
         {
+          path:"/card",
+          element:<Card></Card>
+        },
+        {
           path:"/contact",
           element:<Contact></Contact>
+        },
+        {
+          path:"/cardform",
+          element:<CardFrom></CardFrom>
         },
       ]
   },

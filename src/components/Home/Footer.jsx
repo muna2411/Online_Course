@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="bg-[#013220] h-[400px] mt-[200px]">
+        <div className="bg-[#013220] h-[400px] ">
         <div className="flex justify-around item-center">
             <div >
               <img className="w-[180px]" src="https://i.ibb.co/47YSWb3/Compass-3-removebg-preview.png"></img>

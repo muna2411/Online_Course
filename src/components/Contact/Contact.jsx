@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-
+import { Map, Marker } from "pigeon-maps"
 
 const Contact = () => {
 
@@ -116,8 +116,16 @@ const Contact = () => {
                   </div>
                 </div>
             </div>
+
+
+
+            <div>
+            <Map height={300} defaultCenter={[50.879, 4.6997]} defaultZoom={11}>
+             <Marker width={50} anchor={[50.879, 4.6997]} />
+            </Map>
+            </div>
             {/* Video */}
-            <div className="relative mt-[100px]">
+            <div className="relative my-[100px]">
       <video
           style={{ Width: "600px",  height:"600px", margin: "0 auto" }}
           playsInline

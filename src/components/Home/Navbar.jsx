@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to="/" exact activeClassName="active-link">Home</Link>
           <Link activeClassName="active-link">About</Link>
           <Link to="/contact" activeClassName="active-link">Contact</Link>
-          <Link activeClassName="active-link">Card</Link>
+          <Link to="/cardform" activeClassName="active-link">Card</Link>
           <Link to="/cart" activeClassName="active-link"><FaShoppingCart size={24} /></Link> 
           </nav>
           
