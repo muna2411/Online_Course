@@ -4,7 +4,7 @@ import './Yes.css';
 const Banner = () => {
     return (
         <div>
-            <div className="h-[700px]" style={{ backgroundImage: "url('https://i.ibb.co/tJSxdBr/four-grad-students-caps-and-diplomas.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+            <div className="h-[700px]" style={{ backgroundImage: "url('https://i.ibb.co/mHQKy69/four-grad-students-caps-and-diplomas.jpg')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
             {/* <a href="https://ibb.co/kSp9dKC"><img src="https://i.ibb.co/tJSxdBr/four-grad-students-caps-and-diplomas.jpg" alt="four-grad-students-caps-and-diplomas" border="0"></a> */}
             {/* style={{ backgroundImage: "url('https://i.ibb.co/9TXLygz/pexels-ann-poan-5797904.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} */}
                 

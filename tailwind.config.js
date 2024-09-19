@@ -10,7 +10,9 @@ export default {
       a:['Madimi One'],
       b:['Kalam'],
       c:['Comic Neue'],
-      d:['Akaya Kanadaka']
+      d:['Akaya Kanadaka'],
+      e:['Fascinate Inline'],
+      f:['Jacques Francois Shadow']
     }
   },
   plugins: [require("daisyui")],

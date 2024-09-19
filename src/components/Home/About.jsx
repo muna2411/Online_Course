@@ -1,4 +1,5 @@
 import { FaCertificate, FaQuestionCircle, FaTasks} from "react-icons/fa";
+import Marquee from "react-fast-marquee";
 
 
 const About = () => {
@@ -38,6 +39,24 @@ const About = () => {
             <img className="w-[550px] mx-[100px]" src="https://i.ibb.co/5nmdDTH/15-removebg-preview.png"></img>
             </div>
        </div>  
+
+
+
+
+
+       <div >
+       <div >
+       <Marquee >
+                <div>
+                    <p className="text-[100px] font-f text-[#013220]">I have worked in your industry, e.g., technology, finance, healthcare for number years, where I have developed a robust understanding of key aspects of your work, e.g., software development, project management, client relations. My roles have ranged from starting position, e.g., junior developer, intern to current or most recent position, e.g., senior developer, team lead, allowing me to gain a comprehensive view of your field or industry.</p>
+                </div>
+        </Marquee>
+       </div>
+         <div>
+         {/* <img className="mx-auto w-[500px]" src="https://i.ibb.co/MV7yNJT/pexels-limoo-3859717-15943862.jpg"/>  */}
+         </div>
+            
+        </div>
 
 
 

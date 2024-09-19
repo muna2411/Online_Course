@@ -23,10 +23,11 @@ const Navbar = () => {
         <div className="bg-white  px-4  font-a flex justify-between mx-[40px] items-center h-[100px]">
         
         <div className="flex justify-center items-center">
-          <img className="w-[180px] " src="https://i.ibb.co/47YSWb3/Compass-3-removebg-preview.png"></img>
+          <img className="w-[180px]" src="https://i.ibb.co/47YSWb3/Compass-3-removebg-preview.png"></img>
         </div>
         
-          {/* <a href="/" exact activeClassName="active-link">Home</a>
+          {/* https://i.ibb.co/47YSWb3/Compass-3-removebg-preview.png
+          <a href="/" exact activeClassName="active-link">Home</a>
           <a activeClassName="active-link">About</a>
           <a to="/contact" activeClassName="active-link">Contact</a>
           <a activeClassName="active-link">Card</a>

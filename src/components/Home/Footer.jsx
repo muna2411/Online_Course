@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="bg-[#013220] h-[400px] ">
         <div className="flex justify-around item-center">
             <div >
-              <img className="w-[180px]" src="https://i.ibb.co/47YSWb3/Compass-3-removebg-preview.png"></img>
+              <img className="w-[250px] my-[50px]" src="https://i.ibb.co/J5fQgvD/Librarify-removebg-preview-1.png"></img>
               <p className="text-white text-[16px] my-[10px] font-semibold mt-[-20px]">Learn Anywhere Your Path, Our Courses</p>
               <p className="text-white text-[16px] font-semibold">We Are Always Ready To Help & Guide You.</p>
               <div className="flex justify-between items-center w-[150px] mt-[30px]">
