@@ -1,5 +1,24 @@
 
+import { useState } from "react";
+import { FaStar } from "react-icons/fa"
+import Rating from 'react-rating';
 const CardFrom = () => {
+
+  const [ratings, setRatings] = useState(0);
+  
+  const handleAddBook = event =>{
+    event.preventDefault();
+       const form = event.target;
+    // const name = form.name.value;
+    // const author = form.author.value;
+    // const quantity= form.quantity.value;
+    // const category_name = form.category_name.value;
+    // const description = form.description.value;
+    const ratings = form.ratings.value;
+    // const image = form.image.value;
+    const user = {ratings};
+    console.log(user);
+  }
     return (
         <div className='flex justify-between items-center'>
             {/* <div><img className='w-[500px] h-[750px]'  src='r15.jpg'></img></div> */}
@@ -7,75 +26,55 @@ const CardFrom = () => {
   {/* <div className="hero-overlay bg-opacity-30"></div> */}
   <div >
     <div >
-    <form  className="grid lg:grid-cols-2 sm:grid-cols-1 lg:mx-auto sm:m-[10px]">
+    <form onSubmit={handleAddBook}  className="grid lg:grid-cols-2 sm:grid-cols-1 lg:mx-auto sm:m-[10px]">
 
              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Course Name</span>
+                  <span className="label-text text-[20px] text-[#411900] font-semibold">Book Name</span>
                 </label>
-                <input type="text" placeholder="Type shop name" name="shopname" className="input input-bordered" style={{ border: "1px solid black" }} required />
+                <input type="text" placeholder="Type book name" name="bookname" className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
               </div>
 
               <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Product Name</span>
+                  <span className="label-text text-[20px] text-[#411900] font-semibold">Writer Name</span>
                 </label>
-                <input type="text" placeholder="Type name" name="productname" className="input input-bordered " style={{ border: "1px solid black" }} required />
+                <input type="text" placeholder="Type name" name="writername" className="input input-bordered " style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
               </div>
 
               <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
                 <label className="label">
                   <span className="label-text text-[20px] text-[#411900] font-semibold">Product Quantity</span>
                 </label>
-                <input type="text" placeholder="Type quantity" name="quantity" className="input input-bordered " style={{ border: "1px solid black" }} required />
-              </div>
-
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Product Owner Email</span>
-                </label>
-                <input type="email" placeholder="Type Owner Email" name="ownerEmail"  className="input input-bordered" style={{ border: "1px solid black" }} required />
-              </div> 
-
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Products Shop Location</span>
-                </label>
-                <input type="text" placeholder="Type Shop Location" name="location" className="input input-bordered" style={{ border: "1px solid black" }} required />
-              </div> 
-
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Product Info</span>
-                </label>
-                <input type="text" placeholder="Type description" name="description" className="input input-bordered" style={{ border: "1px solid black" }} required />
-              </div>
-
-              {/* <div className="form-control m-[50px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-white font-semibold">Ratings</span>
-                </label> 
-             <Rating
-                  emptySymbol={<FaStar color="gray" size={30} />}
-                  fullSymbol={<FaStar color="gold" size={30} />}
-                  initialRating={ratings}
-                  onChange={(value) => setRatings(value)} 
-                /> 
-                 <input type="hidden" name="ratings" value={ratings} />
-              </div> */}
-
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Product Logo / Image</span>
-                </label>
-                <input type="text" placeholder="Import Logo" name="image" className="input input-bordered" style={{ border: "1px solid black" }} required />
+                <input type="text" placeholder="Type quantity" name="quantity" className="input input-bordered " style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
               </div>
 
               {/* <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
                 <label className="label">
+                  <span className="label-text text-[20px] text-[#411900] font-semibold">Product Owner Email</span>
+                </label>
+                <input type="email" placeholder="Type Owner Email" name="ownerEmail"  className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
+              </div>   */}
+
+              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+                <label className="label">
+                  <span className="label-text text-[20px] text-[#411900] font-semibold">Book Info</span>
+                </label>
+                <input type="text" placeholder="Type description" name="description" className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
+              </div>
+
+              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+                <label className="label">
+                  <span className="label-text text-[20px] text-[#411900] font-semibold">Book Image</span>
+                </label>
+                <input type="text" placeholder="Import Logo" name="image" className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
+              </div>
+
+              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+                <label className="label">
                   <span className="label-text text-[20px] text-[#411900] font-semibold">Category</span>
                 </label>
-              <select type="text" name="category" className="select select-bordered w-full " style={{ border: "1px solid black" }} required>
+              <select type="text" name="category" className="select select-bordered w-full " style={{ border: "1px solid black" ,borderRadius: "0px"}} required>
                        <option disabled selected>Select Category</option>
                        <option>Donut</option>
                        <option>Cookies</option>
@@ -84,29 +83,24 @@ const CardFrom = () => {
                        <option>Choco_Drinks</option>
                     
               </select>
-            </div> */}
+            </div>
 
 
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+            <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Price</span>
-                </label>
-                <input type="text" placeholder="Type Price" name="price" className="input input-bordered" style={{ border: "1px solid black" }} required />
-              </div>
+                  <span className="label-text text-[20px] text-[#411900] font-semibold">Book Ratings</span>
+                </label> 
+             <Rating
+                  emptySymbol={<FaStar color="gray" size={30} />}
+                  fullSymbol={<FaStar color="gold" size={30} />}
+                  initialRating={ratings}
+                  onChange={(value) => setRatings(value)} 
+                /> 
+                 <input type="hidden" name="ratings" value={ratings} />
+              </div> 
 
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Profit %</span>
-                </label>
-                <input type="text" placeholder="Type profit" name="profit" className="input input-bordered" style={{ border: "1px solid black" }} required />
-              </div>
+              
 
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Discount %</span>
-                </label>
-                <input type="text" placeholder="Type discount" name="discount" className="input input-bordered" style={{ border: "1px solid black" }} required />
-              </div>
 
 
               <input type="submit" value="Add Product" className="btn bg-[#A0522D] text-white form-control lg:mt-[50px] sm:mt-[30px] w-[150px] h-[60px]  ml-[500px]"  style={{ border: "3px solid white" }}/>
