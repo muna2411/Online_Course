@@ -102,7 +102,6 @@ const CardFrom = () => {
                 <label className="label">
                   <span className="label-text text-[20px] text-[#013220] font-semibold">Book Info</span>
                 </label>
-                {/* <input type="text" placeholder="Type description" name="description" className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required /> */}
                 <textarea className="textarea textarea-bordered" placeholder="Type description" name="description" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
               </div>
 
