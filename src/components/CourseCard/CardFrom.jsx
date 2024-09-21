@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { FaStar } from "react-icons/fa"
 import Rating from 'react-rating';
@@ -20,75 +19,70 @@ const CardFrom = () => {
     console.log(user);
   }
     return (
-        <div className='flex justify-between items-center'>
-            {/* <div><img className='w-[500px] h-[750px]'  src='r15.jpg'></img></div> */}
-   <div className="hero lg:w-full sm:w-[630px] mx-auto bg-fixed " style={{backgroundImage: 'url(https://i.ibb.co/KwHynh5/Beige-Floral-Minimalist-Linktree-Background-1.png)'}}>
-  {/* <div className="hero-overlay bg-opacity-30"></div> */}
-  <div >
-    <div >
-    <form onSubmit={handleAddBook}  className="grid lg:grid-cols-2 sm:grid-cols-1 lg:mx-auto sm:m-[10px]">
+    
+        <div className='flex justify-between items-center relative h-[800px]'>
+          <img className="w-full opacity-35 h-[800px]" src="https://i.ibb.co/wp6WzB4/pexels-pixabay-159711.jpg"></img>
+  {/* <div className="hero lg:w-full sm:w-[630px] mx-auto bg-fixed "> */}
+  <div className="absolute inset-0 flex justify-center items-center">
+  <div className=" bg-white w-[800px] h-[680px]">
+    <div className="flex justify-center items-center my-[100px]">
+    <form onSubmit={handleAddBook} className=" mx-auto" >
+    <div className="grid lg:grid-cols-2 sm:grid-cols-1 lg:mx-auto sm:m-[10px]"> 
 
-             <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+             <div className="form-control m-[10px] lg:w-[350px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Book Name</span>
+                  <span className="label-text text-[20px] text-[#013220] font-semibold">Book Name</span>
                 </label>
                 <input type="text" placeholder="Type book name" name="bookname" className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
               </div>
 
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+              <div className="form-control m-[10px] lg:w-[350px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Writer Name</span>
+                  <span className="label-text text-[20px] text-[#013220] font-semibold">Writer Name</span>
                 </label>
                 <input type="text" placeholder="Type name" name="writername" className="input input-bordered " style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
               </div>
 
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+              <div className="form-control m-[10px] lg:w-[350px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Product Quantity</span>
+                  <span className="label-text text-[20px] text-[#013220] font-semibold">Book Quantity</span>
                 </label>
                 <input type="text" placeholder="Type quantity" name="quantity" className="input input-bordered " style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
               </div>
 
-              {/* <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+              <div className="form-control m-[10px] lg:w-[350px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Product Owner Email</span>
-                </label>
-                <input type="email" placeholder="Type Owner Email" name="ownerEmail"  className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
-              </div>   */}
-
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Book Info</span>
-                </label>
-                <input type="text" placeholder="Type description" name="description" className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
-              </div>
-
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
-                <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Book Image</span>
+                  <span className="label-text text-[20px] text-[#013220] font-semibold">Book Image</span>
                 </label>
                 <input type="text" placeholder="Import Logo" name="image" className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
               </div>
 
-              <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+              <div className="form-control m-[10px] lg:w-[350px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Category</span>
+                  <span className="label-text text-[20px] text-[#013220] font-semibold">Category</span>
                 </label>
               <select type="text" name="category" className="select select-bordered w-full " style={{ border: "1px solid black" ,borderRadius: "0px"}} required>
                        <option disabled selected>Select Category</option>
-                       <option>Donut</option>
-                       <option>Cookies</option>
-                       <option>Cake</option>
-                       <option>Cup_Cakes</option>
-                       <option>Choco_Drinks</option>
+                       <option>Novel</option>
+                       <option>Short Stories</option>
+                       <option>Fantasy</option>
+                       <option>Science Fiction</option>
+                       <option>Romance</option>
+                       <option>Historical Fiction</option>
+                       <option>Thriller</option>
+                       <option>Horror</option>
+                       <option>Biography</option>
+                       <option>Business</option>
+                       <option>Travel</option>
+                       <option>Comics</option>
                     
               </select>
             </div>
 
 
-            <div className="form-control m-[20px] lg:w-[500px] sm:w-[500px]">
+            <div className="form-control m-[10px] lg:w-[350px] sm:w-[500px]">
                 <label className="label">
-                  <span className="label-text text-[20px] text-[#411900] font-semibold">Book Ratings</span>
+                  <span className="label-text text-[20px] text-[#013220]  font-semibold">Book Ratings</span>
                 </label> 
              <Rating
                   emptySymbol={<FaStar color="gray" size={30} />}
@@ -99,18 +93,32 @@ const CardFrom = () => {
                  <input type="hidden" name="ratings" value={ratings} />
               </div> 
 
+
+           </div>
               
 
 
+             <div className="form-control m-[10px] lg:w-full sm:w-[500px]">
+                <label className="label">
+                  <span className="label-text text-[20px] text-[#013220] font-semibold">Book Info</span>
+                </label>
+                {/* <input type="text" placeholder="Type description" name="description" className="input input-bordered" style={{ border: "1px solid black" ,borderRadius: "0px"}} required /> */}
+                <textarea className="textarea textarea-bordered" placeholder="Type description" name="description" style={{ border: "1px solid black" ,borderRadius: "0px"}} required />
+              </div>
 
-              <input type="submit" value="Add Product" className="btn bg-[#A0522D] text-white form-control lg:mt-[50px] sm:mt-[30px] w-[150px] h-[60px]  ml-[500px]"  style={{ border: "3px solid white" }}/>
+              <input type="submit" value="Add Product" className="btn bg-[#013220] text-white form-control lg:mt-[30px] sm:mt-[30px] w-[150px] h-[60px]  ml-[550px]"  style={{ border: "3px solid white" }}/>
              
         </form> 
-        {/* <img className='lg:ml-[1200px] lg:mt-[-450px] sm:ml-[200px] sm:mt-[-100px]' src='https://i.ibb.co/rG3KrNm/1.png'></img> */}
+       
     </div>
+   
+  </div>
+  <div className="bg-slate-400 w-[400px] h-[680px]">
+    <img className="mx-auto my-auto w-[300px]" src="https://i.ibb.co.com/2gTWP6v/47428a1016f0b6250a2a5e18ea2bd474-removebg-preview.png"></img>
+  </div>
   </div>
 </div>
-        </div>
+       
     );
 };
 
